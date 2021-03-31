@@ -1,10 +1,18 @@
 
+/*******************************************************************************
+********************** The Odin Project: Google Homepage ***********************
+********************************************************************************
+
+***********************          by Justin Bauer          **********************
+***********************   justinbauer.design@gmail.com    **********************
+***********************     http://justinbauer.design     **********************
+
+********************************************************************************/
 body{
     font-size: 13px;
     color:#222;
-    font-family: Roboto, RobotoDraft, Arial, sans-serif;
+    font-family: "Roboto", arial, sans-serif;
 }
-
 /********************** Nav Menu **********************/
 header {
     position: fixed;
@@ -42,31 +50,25 @@ nav li.nav-left{
 nav li.nav-right{
     padding: 6px;
 }
-
+/**** Icon - Apps ****/
 .apps span{
     display:flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     border-radius:25px;
-    /* height:40px;
-    width:40px; */
 }
-
 .apps span:hover{
     background-color:rgba(60,64,67,0.08)
 }
 .material-icons{
-    /* height:100%; */
     color:#5f6368;
     font-size: 24px;
     align-items: center;    
-    /* font-family: 'apps', serif; */
     text-align: center;
     padding: 8px;
-    /* font-size:1px; */
-        }
-
+}
+/**** ISign In button ****/
 .sign-in{
     font-weight:500;
     font-size:14px;
@@ -87,17 +89,14 @@ nav li.nav-right{
 
 /********************** Main **********************/
 main{
-    text-align:center;
-}
-main{
     height:100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align:center;
-
 }
+/**** Google Logo Image ****/
 .google-img{
     display:flex;
     flex-direction: column;
@@ -105,18 +104,20 @@ main{
     max-height:290px;
     min-height:90px;
 }
-
 .google-logo{
     width:auto;
     max-width: 100%;
     max-height: 100%;
-    
 }
+/**** Box for centering content ****/
 .centered {
     position:absolute;
     width:100%;
-    top:28%;
+    top
+    :28%;
 }
+
+/**** Google search bar ****/
 .form{
     padding:20px;
 }
@@ -173,22 +174,24 @@ input[type="submit"]{
     background-color:#f8f9fa;
     border: 1px solid transparent;
     }
-    input[type="submit"]:hover{
+/**** "Google Search" & "I'm Feeling Lucky" buttons ****/
+input[type="submit"]:hover{
         color:#202124;
         border:1px solid #dadce0;
         background-color:#f8f9f1;
         box-shadow: 0 1px 1px rgba(0,0,0,.1);
-    }
-    .language a {
+}
+.language a {
         text-decoration: none;
         color:#1a0dab;
-    }
-    .language a:visited {
+        font-size:small;
+}
+.language a:visited {
         color: #1a0dab;
-    }
-    .language a:hover {
+}
+.language a:hover {
         text-decoration:underline;
-    }
+}
 
 /********************** footer **********************/
 footer{
@@ -206,17 +209,19 @@ footer a{
 footer a:hover{
     text-decoration: underline;
 }
+/**** Top half of footer ****/
 .footer-top{
     display:flex;
     justify-content: flex-start;
     padding: 15px 30px;
     border-bottom:1px solid #dadce0;
 }
+/**** Responsive footer elements ****/
 .footer-bottom{
     display:flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-
+    padding: 0 20px;
 }
 .footer-ul{
     display:flex;
