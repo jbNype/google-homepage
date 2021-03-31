@@ -11,9 +11,20 @@
 ********************************************************************************/
 body{
     font-size: 13px;
+    /* font-weight: 400; */
     color:#222;
     font-family: "Roboto", arial, sans-serif;
+    background:#fff;
+    min-width:400px;
+    margin: 0 auto;
 }
+/* .content-wrap{
+    display:flex;
+    flex-direction: column;
+    height:100%;
+    width:100%;
+    align-items: ;
+} */
 /********************** Nav Menu **********************/
 header {
     position: fixed;
@@ -92,10 +103,12 @@ nav li.nav-right{
 main{
     height:100%;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
     text-align:center;
+    min-height:100vh;
+    margin-top:-75px;
 }
 /**** Google Logo Image ****/
 .google-img{
@@ -114,8 +127,9 @@ main{
 .centered {
     position:absolute;
     width:100%;
-    top
-    :28%;
+    /* margin:-150px; */
+    /* top:-100px; */
+    /* top:28%; */
 }
 
 /**** Google search bar ****/
@@ -140,6 +154,7 @@ main{
 }
 .inside-bar{
     padding: 5px 8px 0px 14px;
+    margin-top:8px;
     background:#fff;
 }
 .search-bar .material-icons{
@@ -162,10 +177,12 @@ main{
     margin-top:-5px;
 }
 .search-buttons{
-    margin-top:20;
+    padding-top:18px;
 }
 input[type="submit"]{
     font-size:14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#202124;
     height:34px;
     margin:11px 4px;
     padding:0 16px;
@@ -179,8 +196,11 @@ input[type="submit"]{
 input[type="submit"]:hover{
         color:#202124;
         border:1px solid #dadce0;
-        background-color:#f8f9f1;
+        background-color:#f8f9fa;
         box-shadow: 0 1px 1px rgba(0,0,0,.1);
+}
+.language{
+    flex-grow:1;
 }
 .language a {
         text-decoration: none;
@@ -196,16 +216,17 @@ input[type="submit"]:hover{
 
 /********************** footer **********************/
 footer{
-    position: fixed;
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
     width:100%;
     bottom: 0;
     background-color:#f2f2f2;
     color:rgba(0,0,0,.54);
-    font-size:15px;
+    font-size:14px;
 }
 footer a{
     color:rgba(0,0,0,.54);
-    font-size:15px;
+    /* font-size:15px; */
 }
 footer a:hover{
     text-decoration: underline;
@@ -221,7 +242,7 @@ footer a:hover{
 .footer-bottom{
     display:flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding: 0 20px;
 }
 .footer-ul{
@@ -234,8 +255,19 @@ footer a:hover{
     white-space: nowrap;
     padding:15px;
 }
+/* .footer-left{
+    justify-content: flex-start;
+}
+.footer-left{
+    justify-content: flex-end;
+} */
 .footer-left, .footer-right {
     display:flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+@media only screen and (max-width:1200px){
+    .footer-bottom{
+        justify-content: space-evenly;
+    } 
 }
